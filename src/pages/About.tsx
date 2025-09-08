@@ -24,7 +24,7 @@ const About = () => {
 
       {/* Top row: 2 members */}
       <div className="team-row-two">
-        {team.slice(0, 2).map((member, index) => (
+        {team.slice(0, 2).map((member, _index) => (
           <div key={member.name} className="team-card">
             <img src={member.img} alt={member.name} className="team-img" />
             <h3 className="team-name">{member.name}</h3>
