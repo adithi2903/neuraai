@@ -17,6 +17,17 @@ const Events = () => {
             Supervised and unsupervised learning. Key algorithms and applications. Interactive Q&A session — explore the
             future with NEURA AI!
           </p>
+          <p className="events-date">26 Sep 2025, @AB4 Auditorium</p>
+<p className="events-join">
+  Join us now:{" "}
+  <a
+    href="https://forms.office.com/r/czgen9Dcvs"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    AI FOR EVERYONE
+  </a>
+</p>
         </div>
         <div className="events-image-wrapper">
           <h4 className="events-scan-heading">Scan Here</h4>

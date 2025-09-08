@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
             Email: <span className="contact-name">Riddhi (Gen Sec)</span>: riddhi.mitblr2024@learner.manipal.edu
           </p>
           <p>
-            Phone: <span className="contact-name">Riddhi (Gen Sec)</span>: +91 73880 68555
+            Phone: <span className="contact-name">Riddhi (Gen Sec)</span>: +91 73380 68555
           </p>
         </div>
       </div>

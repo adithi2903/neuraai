@@ -31,11 +31,14 @@
 .team-grid,
 .team-row-two {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
-  justify-content: center;
+  justify-content: center;   /* <--- centers the columns inside */
+  justify-items: center;     /* <--- ensures each card centers in its cell */
   width: 100%;
   box-sizing: border-box;
 }
+
 
 .team-grid {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
