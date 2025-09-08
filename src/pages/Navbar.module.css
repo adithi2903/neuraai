@@ -1,0 +1,202 @@
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  max-width: 1100px;
+  padding: 14px 28px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(10, 14, 21, 0.6); /* semi-transparent dark */
+  border-radius: 30px; /* more rounded edges */
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  z-index: 1000;
+}
+
+/* Logo section */
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 45px;
+  width: auto;
+}
+
+/* Nav links */
+.navLinks {
+  display: flex;
+  gap: 28px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #e5e5e5;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navLinks a:hover {
+  color: #4da6ff;
+  transform: translateY(-2px);
+}
+
+/* MIT logo */
+.mitLogo {
+  height: 38px;
+  width: auto;
+}
+
+/* Hamburger icon - hidden by default */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: #e5e5e5;
+  z-index: 1100;
+}
+
+/* --- Responsive Adjustments --- */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+  .navbar {
+    width: 90%;
+    padding: 12px 20px;
+    gap: 10px;
+  }
+
+  .navLinks {
+    gap: 18px;
+  }
+
+  .navLinks a {
+    font-size: 15px;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .mitLogo {
+    height: 34px;
+  }
+}
+
+/* Mobile / small screens */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: row; /* logo left, hamburger right */
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    border-radius: 20px;
+    gap: 12px;
+  }
+
+  .logoSection {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .logo {
+    height: 35px;
+  }
+
+  /* Show hamburger on mobile only */
+  .hamburger {
+    display: block;
+  }
+
+  /* Hide nav links by default on mobile */
+  .navLinks {
+    display: none;
+    position: absolute;
+    top: 100%; /* dropdown below navbar */
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(10, 14, 21, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+  }
+
+  /* Show nav links when hamburger is active */
+  .navLinks.active {
+    display: flex;
+    padding: 10px 0;
+  }
+
+  .navLinks a {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .mitLogo {
+    display: none;
+  }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+  .navbar {
+    width: 95%;
+    padding: 8px 12px;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .navLinks {
+    gap: 10px;
+  }
+
+  .navLinks a {
+    font-size: 13px;
+  }
+
+  .mitLogo {
+    height: 28px;
+  }
+}
+
+/* Desktop and tablet (above 768px) */
+@media screen and (min-width: 769px) {
+  .hamburger {
+    display: none; /* hide hamburger on larger screens */
+  }
+
+  .navLinks {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    max-height: none;
+    padding: 0;
+    background: transparent;
+    gap: 28px;
+  }
+
+  .navLinks a {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .mitLogo {
+    display: block;
+  }
+}

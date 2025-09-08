@@ -1,0 +1,132 @@
+.footer {
+  background-color: #2b3a54; /* slightly lighter dark blue */
+  color: #fff;
+  padding: 40px 20px 20px 20px;
+  font-family: 'Courier Prime', monospace;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1 1 250px;
+  min-width: 200px;
+}
+
+.footer-logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.footer-desc {
+  font-size: 14px;
+  color: #d2f4ff;
+  margin-bottom: 12px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-socials a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-socials a:hover {
+  color: #aaa;
+}
+
+.footer-heading {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.footer-column p {
+  margin-bottom: 6px;
+  color: #ddd;
+}
+
+.contact-name {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+  color: #ffffff;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+}
+
+/* --- Responsive Adjustments --- */
+/* --- Responsive Adjustments --- */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 8px 15px 15px 15px; /* very compact on mobile */
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 1px; 
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+    min-width: unset;
+  }
+
+  .footer-logo {
+    font-size: 28px;
+    margin-bottom: 6px; /* reduce space below logo */
+  }
+
+  /* Description smaller and split into two lines */
+  .footer-desc {
+    font-size: 12px;
+    max-width: 220px; /* forces line break into two rows */
+    margin: 0 auto 4px auto; /* less space below description */
+    line-height: 1.4;
+  }
+
+  .footer-socials {
+    justify-content: center;
+    margin-bottom: 6px; /* reduce space below icons */
+  }
+
+  .footer-socials a {
+    margin-right: 12px; /* smaller space between icons */
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer-heading {
+    font-size: 16px;
+    margin-bottom: 4px; /* closer to contact info */
+  }
+
+  .footer-column p {
+    font-size: 13px;
+    margin-bottom: 4px; /* less spacing between lines */
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    padding-top: 8px; /* less space above bottom text */
+  }
+}
