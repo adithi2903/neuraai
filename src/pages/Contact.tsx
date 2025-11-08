@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
           </a>
 
           <a
-            href="http://linkedin.com/company/neura-ai-mitblr/"
+            href="https://www.linkedin.com/company/neura-ai"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-btn linkedin"

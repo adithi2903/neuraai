@@ -1,0 +1,265 @@
+/* --- Overall Section --- */
+.project-detail-section {
+  padding: 8rem 1rem;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  font-family: "Tinos", serif;
+  color: #f8fafc;
+}
+
+/* --- Container --- */
+.project-detail-container {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+  background: rgba(88, 115, 159, 0.45); /* deep glass look */
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-detail-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* --- Left Side (Details) --- */
+.project-info {
+  flex: 1;
+  min-width: 320px;
+}
+
+.project-detail-title {
+  font-family: "DM Serif Text", serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.15);
+}
+
+.project-detail-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e2e8f0;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+/* --- Subtitles --- */
+.project-subtitle {
+  font-family: "DM Serif Text", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f9fafb;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.project-subtitle::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #d0e4e6, #5d8fb1);
+  border-radius: 2px;
+  margin-top: 6px;
+}
+
+/* --- Library List --- */
+.library-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.library-list li {
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.05rem;
+  color: #dbeafe;
+}
+
+.library-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #6f9ec6;
+  font-size: 1.2rem;
+}
+
+/* --- Right Side (Demo Video) --- */
+.project-demo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project-demo h2 {
+  font-family: "DM Serif Text", serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #f9fafb;
+  margin-bottom: 1rem;
+}
+
+.project-demo h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #fffdfe, #5d8fb1);
+  border-radius: 2px;
+  margin: 6px auto 0 auto;
+}
+
+.project-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;
+}
+
+.project-video:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
+}
+
+/* --- Go Back Button --- */
+.go-back-btn {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(30, 41, 59, 0.6);
+  color: #f9fafb;
+  border: none;
+  border-radius: 50px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-family: "Faustina", serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.go-back-btn:hover {
+  transform: translateX(-3px);
+  background: rgba(244, 114, 182, 0.3);
+  color: #f472b6;
+}
+
+.go-back-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.go-back-btn:hover svg {
+  transform: translateX(-4px);
+}
+
+/* --- Responsive Layout --- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .project-detail-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .project-detail-title {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .project-info {
+    text-align: center;
+  }
+
+  .project-subtitle {
+    text-align: center;
+  }
+
+  .project-demo {
+    width: 100%;
+  }
+}
+
+/* --- Phones --- */
+@media (max-width: 600px) {
+  .project-detail-section {
+    padding: 6rem 1rem;
+  }
+
+  .project-detail-container {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .project-detail-title {
+    font-size: 1.9rem;
+    line-height: 1.3;
+  }
+
+  .project-detail-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .project-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .library-list li {
+    font-size: 0.9rem;
+  }
+
+  .project-demo h2 {
+    font-size: 1.3rem;
+  }
+
+  .project-video {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    margin-top: 0.5rem;
+  }
+
+  .go-back-btn {
+    top: 1rem;
+    left: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* --- Light Blue → Black Heading Gradient --- */
+/* .gradient-text {
+  background: linear-gradient(90deg, #7ed0ff, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+/* --- Slightly longer & softer container for SongRec --- */
+/* .project-detail-container {
+  max-width: 1500px; 
+  background: rgba(88, 115, 159, 0.35); 
+  backdrop-filter: blur(14px);
+} */

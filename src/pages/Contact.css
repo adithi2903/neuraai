@@ -23,7 +23,7 @@
   /* Title */
   .contact-title {
     font-size: clamp(2.5rem, 5vw, 3.5rem);
-    font-family: "Orbitron", sans-serif;
+    font-family: "Faustina", serif;
     font-weight: 800;
     margin-bottom: 1rem;
   
@@ -36,6 +36,7 @@
   
   /* Subtitle */
   .contact-subtitle {
+    font-family: "Faustina", serif;
     font-size: 1.2rem;
     color: #f3f7ff;
     margin-bottom: 2rem;
@@ -51,6 +52,7 @@
   
 /* Button base */
 .contact-btn {
+  /* font-family: "Faustina", serif; */
   display: flex;
   align-items: center;
   justify-content: flex-start;

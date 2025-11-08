@@ -7,7 +7,7 @@
 }
 
 html, body {
-  overflow-x: hidden; /* key to prevent horizontal scroll */
+  overflow-x: hidden;
 }
 
 body {

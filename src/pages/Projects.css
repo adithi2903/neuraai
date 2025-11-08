@@ -1,0 +1,128 @@
+/* --- Section --- */
+.projects-section {
+  background: transparent;
+  color: #fff;
+  padding: 6rem 1.5rem;
+  text-align: center;
+  font-family: "Faustina", serif;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- Title --- */
+.projects-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 3.5rem;
+  font-family: "DM Serif Text", serif;
+  letter-spacing: 1px;
+  color: #ffffff; /* solid white, no gradient */
+}
+
+
+
+/* --- Grid Layout --- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2.5rem;
+}
+
+/* --- Card --- */
+.project-card {
+  background: rgba(88, 115, 159, 0.45);
+  border-radius: 1.25rem;
+  padding: 2.2rem;
+  text-align: left;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(139, 198, 250, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 390px; 
+}
+
+.project-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  background: rgba(27, 33, 58, 0.7); /* slightly more visible when hovered */
+  box-shadow: 0 10px 32px rgba(139, 198, 250, 0.25);
+}
+
+/* --- Title inside card --- */
+.project-header h3 {
+  font-size: 1.5rem;
+  font-family: "DM Serif Text", serif;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+/* --- Description --- */
+.project-description {
+  font-size: 1.05rem;
+  color: #e5e7eb;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+/* --- Tech Tags --- */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.25rem;
+}
+
+.project-tag {
+  background: rgba(139, 198, 250, 0.15);
+  color: #dbeafe;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}
+
+/* --- Link --- */
+.project-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #8bc6fa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  align-self: flex-start;
+}
+
+.project-link:hover {
+  color: #c1d8ff;
+  text-decoration: underline;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 4rem 1rem;
+  }
+
+  .projects-title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .project-card {
+    padding: 1.8rem;
+    min-height: 220px;
+  }
+
+  .project-header h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+  }
+}

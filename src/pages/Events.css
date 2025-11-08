@@ -1,178 +1,88 @@
 .events-section {
-  padding: 100px 20px 80px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  font-family: 'Courier Prime', monospace;
-  box-sizing: border-box;
+  padding: 6rem 8%;
+  background: transparent;
+  color: #fff;
+  font-family: "Faustina", serif;
+  text-align: center;
 }
 
 .events-header {
-  text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 3rem;
 }
 
 .events-title {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 3rem;
-  font-weight: 800;
-  color: #eaf0ff;
+  font-size: 2.5rem;
+  font-family: "DM Serif Text", serif;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
 }
-
-.events-content {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.events-text {
-  flex: 1 1 400px;
-  margin-top: 70px;
-}
-
-/* Date text */
-.events-date {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: hsl(0, 96%, 90%); /* subtle gray */
-  margin: 10px 0;
-  font-family: "Courier Prime", monospace;
-}
-
-/* Join link text */
-.events-join {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 12px 0 0;
-  font-family: "Orbitron", sans-serif;
-}
-
-.events-join a {
-  color: #ffcece; /* bright cyan link */
-  text-decoration: none;
-  margin-left: 6px;
-  text-decoration: underline;
-  transition: color 0.3s ease;
-}
-
-.events-join a:hover {
-  color: #c9feff; /* darker hover blue */
-  text-decoration: underline;
-}
-
 
 .events-subtitle {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #dbe9ff;
-  margin-bottom: 15px;
-  text-align: center;
-
-  /* Add black border to text */
-  -webkit-text-stroke: 1px rgb(35, 43, 49); /* thickness and color */
-  /* Optional: fallback for non-WebKit browsers */
-  text-shadow:
-    -1px -1px 0 black,
-     1px -1px 0 black,
-    -1px  1px 0 black,
-     1px  1px 0 black;
-}
-
-
-.events-lede {
   font-size: 1.1rem;
-  line-height: 1.6;
-  color: #d8e8ff;
+  color: #e2e8f0;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.events-image-wrapper {
-  flex: 1 1 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  gap: 15px;
-  justify-content: flex-start;
-  padding-top: 10px; 
+/* Event Cards Grid */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-items: center;
 }
 
-.events-scan-heading {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.5rem;
-  color: #e0e9ff;
-  margin: 0;
-}
-
-.events-image {
-  width: 100%;
+.event-card {
+  background: rgba(22, 38, 62, 0.8); /* dark slate w/ transparency */
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: left;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
   max-width: 400px;
-  border-radius: 16px;
-  object-fit: cover;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* --- Responsive Adjustments --- */
-
-/* Tablets */
-@media screen and (max-width: 1024px) {
-  .events-content {
-    gap: 30px;
-  }
-
-  .events-subtitle {
-    font-size: 1.7rem;
-  }
-
-  .events-lede {
-    font-size: 1rem;
-  }
-
-  .events-scan-heading {
-    font-size: 1.3rem;
-  }
+.event-card:hover {
+  transform: translateY(-5px);
+  background: rgba(88, 111, 143, 0.9);
 }
 
-/* Mobile */
-@media screen and (max-width: 768px) {
-  .events-text {
-    margin-top: 0;
-    margin-bottom: 0; /* remove extra spacing */
-  }
-
-  .events-image-wrapper {
-    padding-top: 0;
-    gap: 0; /* collapse gap between heading and image */
-  }
-
-  .events-scan-heading {
-    margin-top: 0; /* ensure heading touches the text above */
-    margin-bottom: 4px; /* small spacing from image */
-  }
-  
+.event-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #f8fafc;
+  font-family: "DM Serif Text", serif;
 }
 
+.event-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+  margin-bottom: 1rem;
+}
 
+.event-details {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
 
-/* Extra small screens */
-@media screen and (max-width: 480px) {
+/* Responsive */
+@media (max-width: 768px) {
+  .events-section {
+    padding: 4rem 5%;
+  }
+
   .events-title {
     font-size: 2rem;
   }
 
-  .events-subtitle {
-    font-size: 1.3rem;
+  .event-card {
+    padding: 1.5rem;
   }
 
-  .events-lede {
-    font-size: 0.9rem;
-  }
-
-  .events-scan-heading {
-    font-size: 1rem;
-  }
-
-  .events-image {
-    max-width: 100%;
+  .event-description {
+    font-size: 0.95rem;
   }
 }

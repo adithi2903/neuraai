@@ -77,11 +77,11 @@ const EventSlideshow: React.FC = () => {
     >
       <h2
         style={{
-          fontSize: "3rem",
+          fontSize: "4rem",
           margin: "0 0 24px",
           color: "#FFF",
           fontWeight: 700,
-          fontFamily: '"Orbitron", sans-serif',
+          fontFamily: '"DM Serif Text", sans-serif',
           letterSpacing: "1px",
         }}
       >
@@ -128,7 +128,7 @@ const EventSlideshow: React.FC = () => {
                   aspectRatio: "1/1",
                   objectFit: "cover",
                   borderRadius: 14,
-                  border: "3px solid rgba(255,255,255,0.9)",
+                  border: "1px solid rgba(255,255,255,0.9)",
                   boxShadow: "0 10px 30px rgba(2,6,23,0.16)",
                   outline: "1px solid rgba(0,0,0,0.06)",
                 }}

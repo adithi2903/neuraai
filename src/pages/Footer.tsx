@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
 
         {/* Contact Info */}
         <div className="footer-column">
-          <h3 className="footer-heading">Contact</h3>
+          <h3 className="footer-heading">CONTACT</h3>
           <p>
             Email: <span className="contact-name">Riddhi (Gen Sec)</span>: riddhi.mitblr2024@learner.manipal.edu
           </p>

@@ -5,7 +5,9 @@
   box-sizing: border-box;
   overflow-x: hidden;
 }
-
+.team-role{
+  font-family: "Faustina", serif;
+}
 .about-section {
   min-height: 100vh;
   padding: 120px 1rem 60px;
@@ -17,6 +19,7 @@
   overflow-x: hidden;
   width: 100%;
   box-sizing: border-box;
+  font-family: "Faustina", serif;
 }
 
 .section-title {
@@ -24,7 +27,7 @@
   font-weight: bold;
   margin-bottom: 60px;
   text-align: center;
-  font-family: "Orbitron", sans-serif;
+  font-family: "DM Serif Text", serif;
 }
 
 /* Grid adjustments */
@@ -33,8 +36,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
-  justify-content: center;   /* <--- centers the columns inside */
-  justify-items: center;     /* <--- ensures each card centers in its cell */
+  justify-content: center;   
+  justify-items: center;     
   width: 100%;
   box-sizing: border-box;
 }
@@ -93,7 +96,7 @@
 .team-role {
   color: #d1d5db;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -101,10 +104,29 @@
 
 /* Tablets */
 @media (max-width: 1024px) {
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .team-heading {
+    width: 100%; /* heading takes full width */
+    margin-bottom: 20px; /* spacing below heading */
+  }
+
+  .team-grid,
+  .team-row-two {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    width: 100%; /* ensure grid starts below heading */
+  }
+
+  .about-section {
+    display: grid;
+    grid-template-columns: 1fr; /* section full width */
+    gap: 30px;
+    justify-items: center;
   }
 }
+
+
 
 /* Mobile */
 @media (max-width: 768px) {
@@ -121,6 +143,7 @@
   .team-row-two {
     grid-template-columns: 1fr;
     gap: 25px;
+    margin-bottom: 25px
   }
 
   .team-card {

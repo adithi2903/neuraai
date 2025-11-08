@@ -1,8 +1,8 @@
 .footer {
-  background-color: #2b3a54; /* slightly lighter dark blue */
+  background-color: #001022; /* slightly lighter dark blue */
   color: #fff;
   padding: 40px 20px 20px 20px;
-  font-family: 'Courier Prime', monospace;
+  font-family: "Faustina", serif;
 }
 
 .footer-container {
@@ -20,7 +20,7 @@
 }
 
 .footer-logo {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "DM Serif Text", serif;
   font-size: 32px;
   margin-bottom: 12px;
 }
@@ -47,7 +47,7 @@
 }
 
 .footer-heading {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "DM Serif Text", serif;
   font-weight: bold;
   margin-bottom: 8px;
   font-size: 18px;
@@ -118,6 +118,7 @@
   .footer-heading {
     font-size: 16px;
     margin-bottom: 4px; /* closer to contact info */
+    font-family: "DM Serif Text", serif;
   }
 
   .footer-column p {

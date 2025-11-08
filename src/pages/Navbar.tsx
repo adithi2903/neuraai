@@ -25,8 +25,9 @@ const Navbar: React.FC = () => {
       {/* Nav links */}
       <div className={`${styles.navLinks} ${menuOpen ? styles.active : ""}`}>
         <a href="/">HOME</a>
-        <a href="/about">ABOUT</a>
+        <a href="/about">TEAM</a>
         <a href="/events">EVENTS</a>
+        <a href="/projects">PROJECTS</a>
         <a href="/contact">CONTACT US</a>
       </div>
 
