@@ -65,7 +65,7 @@ export default function SignLang() {
           <h2>Demo Video</h2>
           <video
             className="project-video"
-            src="/src/assets/proj/sign.mp4"
+            src="/assets/proj/sign.mp4"
             controls
             autoPlay={false}
           />

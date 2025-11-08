@@ -67,7 +67,7 @@ export default function SongRec() {
           <h2>Demo Video</h2>
           <video
             className="project-video"
-            src="/src/assets/proj/song.mp4"
+            src="/assets/proj/song.mp4"
             controls
             autoPlay={false}
           />
