@@ -18,19 +18,26 @@ const projects: Project[] = [
     link: "/projects/SignLang",
   },
   {
-    title: "AI Song Recommender",
+    title: "AI Gesture Control Game",
     description:
-      "A personalized music recommendation system that analyzes emotion and user preferences to suggest suitable tracks.",
-    tech: ["Python", "TensorFlow", "Flask"],
-    link: "/projects/SongRec",
-  },
+      "An interactive hand-tracking game using real-time gestures to control movement. In level one, guide your hand to collect donuts while avoiding snakes, and in level two, pilot a spaceship through obstacles — all without touching the keyboard!",
+    tech: ["Python", "OpenCV", "Mediapipe", "NumPy", "Pygame"],
+    link: "/projects/Snake",
+  },  
   {
     title: "AERO CURSOR",
     description:
       "A computer vision–based system that uses hand gestures to control the mouse cursor and play an interactive path-following mini-game using real-time camera tracking.",
     tech: ["Python", "OpenCV", "Mediapipe", "Tkinter", "PyAutoGUI"],
     link: "/projects/Aero",
-  },  
+  }, 
+  {
+    title: "AI Song Recommender",
+    description:
+      "A personalized music recommendation system that analyzes emotion and user preferences to suggest suitable tracks.",
+    tech: ["Python", "TensorFlow", "Flask"],
+    link: "/projects/SongRec",
+  }, 
 ];
 
 export default function Projects() {

@@ -10,6 +10,7 @@ import Projects from "./pages/Projects";
 import SignLang from "./pages/projects/SignLang";
 import SongRec from "./pages/projects/SongRec";
 import Aero from "./pages/projects/Aero";
+import Snake from "./pages/projects/Snake";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -36,6 +37,7 @@ const App = () => {
           <Route path="/projects/SignLang" element={<SignLang />} />
           <Route path="/projects/SongRec" element={<SongRec />} />
           <Route path="/projects/Aero" element={<Aero />} />
+          <Route path="/projects/Snake" element={<Snake />} />
         </Routes>
       </main>
 
